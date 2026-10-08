@@ -24,8 +24,8 @@ import {
 // Image assets reflecting Crystal Kizor's authentic projects, furniture, craftsmanship, and portraits
 const IMAGES = {
   heroPortrait: '/Architectural Designer in Her Studio.png',
-  aboutPortrait: '/crystal-kizor-portrait.png',
-  speakingPortrait: '/crystal-kizor-portrait.png',
+  aboutPortrait: '/Architectural Designer in Her Studio.png',
+  speakingPortrait: '/Architectural Designer in Her Studio.png',
   rammedEarthVilla: '/src/assets/images/rammed_earth_courtyard_villa_1791468882665.jpg',
   briseSoleilPavilion: '/src/assets/images/studio_coka_architecture_1791464106675.jpg',
   tropicalAlmond: '/src/assets/images/tropical_almond_residence_1791468904090.jpg',
