@@ -23,7 +23,7 @@ import {
 
 // Image assets reflecting Crystal Kizor's authentic projects, furniture, craftsmanship, and portraits
 const IMAGES = {
-  heroPortrait: '/crystal-kizor-portrait.png',
+  heroPortrait: '/Architectural Designer in Her Studio.png',
   aboutPortrait: '/crystal-kizor-portrait.png',
   speakingPortrait: '/crystal-kizor-portrait.png',
   rammedEarthVilla: '/src/assets/images/rammed_earth_courtyard_villa_1791468882665.jpg',
