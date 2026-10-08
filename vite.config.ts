@@ -21,7 +21,7 @@ function portraitUploadPlugin() {
               if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
               if (!fs.existsSync(assetsDir)) fs.mkdirSync(assetsDir, { recursive: true });
 
-              fs.writeFileSync(path.join(publicDir, 'Poised in a Warm Design Studio.png'), buffer);
+              fs.writeFileSync(path.join(publicDir, 'alive_and_free_fellowship_1791470074779.jpg'), buffer);
               fs.writeFileSync(path.join(publicDir, 'crystal-kizor-portrait.png'), buffer);
               fs.writeFileSync(path.join(assetsDir, 'crystal-kizor-portrait.png'), buffer);
 
