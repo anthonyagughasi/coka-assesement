@@ -1,0 +1,23 @@
+<svg viewBox="0 0 340 145" fill="#2C2A29" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&amp;display=swap');
+      .ck-top {
+        font-family: 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, serif;
+        font-size: 68px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        text-anchor: middle;
+      }
+      .ck-bot {
+        font-family: 'Cormorant Garamond', 'Didot', 'Bodoni MT', Georgia, serif;
+        font-size: 68px;
+        font-weight: 400;
+        letter-spacing: 0.155em;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+  <text x="170" y="62" class="ck-top" fill="#2C2A29">CRYSTAL</text>
+  <text x="170" y="130" class="ck-bot" fill="#2C2A29">KIZOR</text>
+</svg>

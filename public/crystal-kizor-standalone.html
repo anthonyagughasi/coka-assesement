@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Kizor — Architect & Designer</title>
+  <meta name="description" content="Official ecosystem of Crystal Kizor: Principal at Studio COKA, founder of ELEvated and The Effective Architect, merging African context, materials, and sustainable design." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Crystal Kizor — Architect & Designer" />
+  <meta property="og:description" content="Merging African context, materials, and sustainable design into human life." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: '#FBF9F5',
+            stone: '#F4EFE6',
+            stoneDark: '#EAE2D5',
+            earth: '#3E2723',
+            charcoal: '#2C2A29',
+            terracotta: '#A85A32',
+            terracottaDark: '#8E4B28',
+            warmMuted: '#6E6259',
+            hairline: '#E8E0D5',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FBF9F5;
+      color: #2C2A29;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3, h4, .font-serif {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+  </style>
+</head>
+<body class="bg-sand text-charcoal antialiased selection:bg-terracotta/20 selection:text-earth">
+
+  <!-- 1. HEADER / NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-sand/90 backdrop-blur-md border-b border-hairline transition-all">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="group flex items-center py-1 text-charcoal hover:opacity-80 transition-opacity" title="Crystal Kizor">
+        <svg viewBox="0 0 340 145" fill="#2C2A29" class="h-10 sm:h-12 w-auto overflow-visible" role="img" aria-label="Crystal Kizor">
+          <text x="170" y="62" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" letter-spacing="0.05em">CRYSTAL</text>
+          <text x="170" y="130" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" letter-spacing="0.155em">KIZOR</text>
+        </svg>
+      </a>
+
+      <!-- Navigation links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-warmMuted">
+        <a href="#ethos" class="hover:text-charcoal transition-colors py-1">Ethos</a>
+        <a href="#ecosystem" class="hover:text-charcoal transition-colors py-1">Ecosystem</a>
+        <a href="#works" class="hover:text-charcoal transition-colors py-1">Works & Craft</a>
+        <a href="#pathways" class="hover:text-charcoal transition-colors py-1">Pathways</a>
+        <a href="#about" class="hover:text-charcoal transition-colors py-1">About</a>
+      </nav>
+
+      <!-- Action -->
+      <div class="flex items-center gap-4">
+        <button onclick="openEnquiry('General Architectural & Speaking Inquiry')" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md transition-all shadow-sm active:scale-95 whitespace-nowrap">
+          Enquire
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 flex flex-col justify-center">
+          <div class="flex items-center gap-2.5 text-xs font-semibold tracking-wider uppercase text-terracotta mb-5">
+            <span>Principal, Studio COKA</span>
+            <span aria-hidden="true" class="text-terracotta/40">·</span>
+            <span>Spatial Researcher</span>
+            <span aria-hidden="true" class="text-terracotta/40">·</span>
+            <span>Founder, TEA</span>
+          </div>
+
+          <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal text-charcoal leading-[1.05] tracking-tight mb-7">
+            Crystal <span class="italic font-light">Kizor</span>
+          </h1>
+
+          <p class="text-lg lg:text-xl text-[#5C534D] leading-relaxed max-w-2xl mb-10 font-light">
+            Architect, designer, entrepreneur, speaker, researcher, and creator. 
+            Unifying an ecosystem that merges indigenous African materials, climate resilience, 
+            and contemporary spatial elegance into everyday human life.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-14">
+            <a href="#ecosystem" class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-sand bg-earth hover:bg-terracotta rounded-md transition-all shadow-sm">
+              <span>Explore Ecosystem</span>
+              <span>→</span>
+            </a>
+            <button onclick="openEnquiry('Keynote & Speaking Engagement')" class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-charcoal bg-stone hover:bg-stoneDark border border-[#E0D6C8] rounded-md transition-all">
+              <span>Book Engagement</span>
+              <span class="text-terracotta">↗</span>
+            </button>
+          </div>
+
+          <div class="pt-8 border-t border-hairline grid grid-cols-3 gap-6 max-w-lg">
+            <div>
+              <div class="font-serif text-3xl font-normal text-charcoal tabular-nums">14+</div>
+              <div class="text-xs text-warmMuted mt-1 font-medium">Built & Concept Spaces</div>
+            </div>
+            <div>
+              <div class="font-serif text-3xl font-normal text-charcoal tabular-nums">35k+</div>
+              <div class="text-xs text-warmMuted mt-1 font-medium">Designers Mentored</div>
+            </div>
+            <div>
+              <div class="font-serif text-3xl font-normal text-charcoal tabular-nums">06</div>
+              <div class="text-xs text-warmMuted mt-1 font-medium">Unified Brands</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Editorial Portrait Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="relative bg-stone p-4 rounded-xl border border-[#E2D8CA] shadow-sm">
+              <div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-stoneDark">
+                <img 
+                  src="/src/assets/images/crystal_kizor_portrait_1791464093274.jpg" 
+                  alt="Crystal Kizor sitting in her architectural design studio"
+                  class="w-full h-full object-cover object-top hover:scale-102 transition-transform duration-700 ease-out"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-sand">
+                  <p class="font-serif text-lg font-light tracking-wide italic">"Form rooted in origin."</p>
+                  <p class="text-[11px] text-sand/80 uppercase tracking-widest mt-0.5">Crystal Kizor · Studio Atelier</p>
+                </div>
+              </div>
+              <div class="mt-3.5 px-2 flex items-center justify-between text-xs text-warmMuted">
+                <span>Lagos & Global Practice</span>
+                <span aria-hidden="true">·</span>
+                <span>African Modernism</span>
+                <span aria-hidden="true">·</span>
+                <span>Sustainable Craft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BRAND ETHOS & VISION BAR -->
+  <section id="ethos" class="py-20 bg-stone border-y border-[#E5DDD0]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-6">Founding Philosophy</p>
+      <blockquote class="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-charcoal leading-tight tracking-tight mb-8">
+        “Merging African context, materials, and sustainable design into human life.”
+      </blockquote>
+      <p class="text-sm text-warmMuted max-w-xl mx-auto leading-relaxed mb-10 font-light">
+        Architecture is not an imposed monument; it is a living dialogue between local soils, 
+        generational craft, and climate intelligence. Every initiative within this ecosystem 
+        serves that single enduring truth.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-[#E0D6C8] text-left">
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-charcoal mb-1">Material Memory</h4>
+          <p class="text-xs text-warmMuted leading-normal">Rammed earth, harvested timber, laterite blocks, and sand-cast bronze celebrating indigenous permanence.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-charcoal mb-1">Passive Climate Logic</h4>
+          <p class="text-xs text-warmMuted leading-normal">Tropical brise-soleil facades, natural courtyard convection, and orientation designed without reliance on artificial chill.</p>
+        </div>
+        <div>
+          <h4 class="font-serif text-lg font-semibold text-charcoal mb-1">Human Dignity & Purpose</h4>
+          <p class="text-xs text-warmMuted leading-normal">Educating young practitioners, creating ethical artisanal jobs, and elevating public spaces where communities gather.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. THE MULTI-BRAND ECOSYSTEM GRID -->
+  <section id="ecosystem" class="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div>
+        <p class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-2">Unified Portfolio</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-normal text-charcoal tracking-tight">The Multi-Brand Ecosystem</h2>
+      </div>
+      <p class="text-sm text-warmMuted max-w-md font-light">
+        Six distinct expressions of design, enterprise, education, and community — 
+        each led by Crystal Kizor to influence how we build, furnish, and lead.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- 1. Studio COKA -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/studio_coka_architecture_1791464106675.jpg" alt="Studio COKA" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Spatial Practice</span>
+              <span class="font-serif italic font-light">01</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">Studio COKA</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Architecture, Interior Design & Construction</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">A full-service architectural atelier and construction practice pioneering climate-conscious residential, hospitality, and civic sanctuaries rooted in contemporary African spatial syntax.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Climate Architecture</span> · <span>Rammed Earth & Timber</span> · <span>Bespoke Sanctuaries</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">14+ Built & Active Sites</span>
+          <button onclick="openEnquiry('Studio COKA Commission')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Commission Studio</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. ELEvated -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/elevated_furniture_design_1791464119952.jpg" alt="ELEvated Furniture" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Tactile Atelier</span>
+              <span class="font-serif italic font-light">02</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">ELEvated</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Furniture & Product Design</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">A bespoke furniture and collectible design studio celebrating indigenous West African hardwoods, sand-cast bronze joinery, and sculptural minimalist geometry for soulful interiors.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Bespoke Furniture</span> · <span>Hand-Cast Bronze</span> · <span>Sustainable Hardwoods</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">6 Limited Editions</span>
+          <button onclick="openEnquiry('ELEvated Furniture Catalog')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Acquire Pieces</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. The Effective Architect -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/tea_architect_workshop_1791464131332.jpg" alt="The Effective Architect" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Education & Media</span>
+              <span class="font-serif italic font-light">03</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">The Effective Architect (TEA)</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Education, Practice Systems & Media</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">A global digital academy, masterclasses, and publication dissecting the commercial acumen, execution frameworks, and design rigor needed by forward-thinking practitioners.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Studio Business Mastery</span> · <span>Delivery Systems</span> · <span>Global Fellowship</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">35,000+ Enrolled</span>
+          <button onclick="openEnquiry('TEA Programs')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Explore Masterclass</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- 4. AKO Alliance -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/architectural_craft_texture_1791464149261.jpg" alt="AKO Alliance" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Social Impact</span>
+              <span class="font-serif italic font-light">04</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">AKO Alliance</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Youth Empowerment & Spatial Literacy</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">A philanthropic foundation demystifying spatial design, sustainable material literacy, and vocational craft for underserved youth and emerging African creators.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Youth Apprenticeships</span> · <span>Spatial Literacy</span> · <span>Female Scholar Grants</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">1,200+ Beneficiaries</span>
+          <button onclick="openEnquiry('AKO Alliance Partnership')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Partner with AKO</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. Speaking Engagements -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/crystal_kizor_portrait_1791464093274.jpg" alt="Speaking Engagements" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Global Dialogue</span>
+              <span class="font-serif italic font-light">05</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">Speaking Engagements</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Keynotes, Panels & Thought Leadership</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">High-impact keynote addresses, academic lectures, and symposium dialogues addressing tropical modernist futures, female leadership in construction, and indigenous materiality.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Indigenous Futures</span> · <span>Practice Leadership</span> · <span>African Urbanism</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">30+ Global Keynotes</span>
+          <button onclick="openEnquiry('Speaking Invitation')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Request Speaker Kit</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- 6. Alive and Free -->
+      <div class="group bg-stone border border-[#E5DDD0] rounded-xl overflow-hidden flex flex-col justify-between hover:border-terracotta/40 hover:shadow-md transition-all duration-300">
+        <div>
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/studio_coka_architecture_1791464106675.jpg" alt="Alive and Free" class="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-white text-xs font-medium">
+              <span>Faith & Culture</span>
+              <span class="font-serif italic font-light">06</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="font-serif text-2xl font-semibold text-charcoal mb-1 group-hover:text-terracotta transition-colors">Alive and Free</h3>
+            <p class="text-xs font-medium text-terracotta mb-3">Christian Youth Movement & Leadership</p>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">A transformative spiritual and cultural movement empowering young men and women to anchor creative excellence, ethical leadership, and purpose in timeless biblical truth.</p>
+            <div class="flex flex-wrap items-center gap-2 text-xs text-warmMuted pt-4 border-t border-hairline">
+              <span>Spiritual Wholeness</span> · <span>Creative Excellence</span> · <span>Fellowship</span>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 flex items-center justify-between">
+          <span class="text-[11px] text-warmMuted font-medium">Annual Summits & Circles</span>
+          <button onclick="openEnquiry('Alive & Free Fellowship')" class="inline-flex items-center gap-1.5 text-xs font-semibold text-earth group-hover:text-terracotta transition-colors">
+            <span>Connect Movement</span> →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. ARCHITECTURAL WORKS & CRAFT GALLERY -->
+  <section id="works" class="py-24 bg-stone/60 border-t border-hairline">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-2">Materiality & Realization</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-normal text-charcoal tracking-tight">Selected Works & Craft Gallery</h2>
+        </div>
+        <p class="text-sm text-warmMuted max-w-sm font-light">
+          A visual record of tactile craftsmanship, climate-responsive structures, and bespoke collectible objects.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Gallery 1 -->
+        <div class="group bg-sand border border-[#E5DDD0] rounded-xl overflow-hidden hover:border-terracotta/50 transition-all flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/studio_coka_architecture_1791464106675.jpg" alt="The Courtyard Pavilion" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"/>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-sand drop-shadow-md">
+              <span class="font-medium">Studio COKA</span>
+              <span>Lagos, Nigeria</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="font-serif text-2xl font-semibold text-charcoal group-hover:text-terracotta transition-colors">The Courtyard Pavilion</h3>
+              <span class="text-xs text-warmMuted font-mono tabular-nums">2025</span>
+            </div>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-4 font-light">A climate-responsive private residence organized around a bioclimatic reflecting pool and ventilated timber screens.</p>
+            <div class="text-xs text-warmMuted pt-3 border-t border-hairline flex items-center gap-2">
+              <span class="font-medium text-charcoal">Materiality:</span>
+              <span>Rammed Earth, Teak Timber, Micro-Concrete</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 2 -->
+        <div class="group bg-sand border border-[#E5DDD0] rounded-xl overflow-hidden hover:border-terracotta/50 transition-all flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/elevated_furniture_design_1791464119952.jpg" alt="Koba Lounge Chair" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"/>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-sand drop-shadow-md">
+              <span class="font-medium">ELEvated</span>
+              <span>Atelier Edition</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="font-serif text-2xl font-semibold text-charcoal group-hover:text-terracotta transition-colors">Koba Lounge Chair (Edition 03)</h3>
+              <span class="text-xs text-warmMuted font-mono tabular-nums">2025</span>
+            </div>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-4 font-light">Sculptural low-slung seating exploring the intersection of raw hand-planed timber grains and molten bronze joints.</p>
+            <div class="text-xs text-warmMuted pt-3 border-t border-hairline flex items-center gap-2">
+              <span class="font-medium text-charcoal">Materiality:</span>
+              <span>West African Walnut, Cast Bronze</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 3 -->
+        <div class="group bg-sand border border-[#E5DDD0] rounded-xl overflow-hidden hover:border-terracotta/50 transition-all flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/architectural_craft_texture_1791464149261.jpg" alt="Perforated Laterite Solarium" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"/>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-sand drop-shadow-md">
+              <span class="font-medium">Studio COKA</span>
+              <span>Abuja, Nigeria</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="font-serif text-2xl font-semibold text-charcoal group-hover:text-terracotta transition-colors">Perforated Laterite Solarium</h3>
+              <span class="text-xs text-warmMuted font-mono tabular-nums">2024</span>
+            </div>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-4 font-light">Tactile solar shading screen engineered to temper tropical heat while painting kinetic shadow geometries across polished floors.</p>
+            <div class="text-xs text-warmMuted pt-3 border-t border-hairline flex items-center gap-2">
+              <span class="font-medium text-charcoal">Materiality:</span>
+              <span>Locally Fired Terracotta, Sandstone Screed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery 4 -->
+        <div class="group bg-sand border border-[#E5DDD0] rounded-xl overflow-hidden hover:border-terracotta/50 transition-all flex flex-col justify-between">
+          <div class="relative aspect-[16/10] overflow-hidden bg-stoneDark">
+            <img src="/src/assets/images/tea_architect_workshop_1791464131332.jpg" alt="The Atelier Drafting Suite" class="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"/>
+            <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-sand drop-shadow-md">
+              <span class="font-medium">The Effective Architect</span>
+              <span>Research Studio</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-baseline justify-between gap-4 mb-2">
+              <h3 class="font-serif text-2xl font-semibold text-charcoal group-hover:text-terracotta transition-colors">The Atelier Drafting Suite</h3>
+              <span class="text-xs text-warmMuted font-mono tabular-nums">2025</span>
+            </div>
+            <p class="text-sm text-[#5C534D] leading-relaxed mb-4 font-light">Curated studio research bench examining raw earthen material samples alongside precise technical construction drawings.</p>
+            <div class="text-xs text-warmMuted pt-3 border-t border-hairline flex items-center gap-2">
+              <span class="font-medium text-charcoal">Materiality:</span>
+              <span>Terrazzo, Laterite Core, Brass Rule</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. TAILORED VISITOR PATHWAYS -->
+  <section id="pathways" class="py-24 max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <p class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-2">Collaborate & Engage</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-normal text-charcoal tracking-tight mb-4">Tailored Visitor Pathways</h2>
+      <p class="text-sm text-warmMuted font-light">Connect directly with the branch of Crystal Kizor’s work aligned with your goals.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Pathway 1 -->
+      <div class="bg-stone border border-[#E5DDD0] rounded-xl p-8 flex flex-col justify-between hover:border-terracotta/40 transition-all">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-terracotta font-semibold mb-2">For Developers & Private Clients</p>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Build with Studio COKA</h3>
+          <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">Commission architectural design, master planning, climate-responsive residential retreats, or turnkey execution engineered with indigenous materials and modern comfort.</p>
+          <ul class="text-xs text-warmMuted space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Residential Sanctuaries & Private Estates</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Eco-Hospitality & Boutique Resorts</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Turnkey Sustainable Construction</span>
+            </li>
+          </ul>
+        </div>
+        <button onclick="openEnquiry('Studio COKA — Architecture Commission')" class="w-full py-3 px-4 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md transition-all text-center">
+          Start Architectural Inquiry
+        </button>
+      </div>
+
+      <!-- Pathway 2 -->
+      <div class="bg-stone border border-[#E5DDD0] rounded-xl p-8 flex flex-col justify-between hover:border-terracotta/40 transition-all">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-terracotta font-semibold mb-2">For Summits & Institutions</p>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Book Crystal for Keynotes</h3>
+          <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">Book Crystal Kizor for international conferences, university design lectures, urban symposiums, panel discussions, or executive architectural advisory sessions.</p>
+          <ul class="text-xs text-warmMuted space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Global Keynotes on African Modernism</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Practice Entrepreneurship & Systems</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Jury Member for Design Competitions</span>
+            </li>
+          </ul>
+        </div>
+        <button onclick="openEnquiry('Speaking & Keynote Request')" class="w-full py-3 px-4 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md transition-all text-center">
+          Request Speaker Kit
+        </button>
+      </div>
+
+      <!-- Pathway 3 -->
+      <div class="bg-stone border border-[#E5DDD0] rounded-xl p-8 flex flex-col justify-between hover:border-terracotta/40 transition-all">
+        <div>
+          <p class="text-xs uppercase tracking-wider text-terracotta font-semibold mb-2">For Architects & Students</p>
+          <h3 class="font-serif text-2xl font-semibold text-charcoal mb-3">Learn with TEA</h3>
+          <p class="text-sm text-[#5C534D] leading-relaxed mb-6 font-light">Access rigorous masterclasses, commercial contract templates, fee estimation models, and the international community transforming how modern studios operate.</p>
+          <ul class="text-xs text-warmMuted space-y-2 mb-8">
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Studio Business Mastery Masterclasses</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Contract & Proposal Systems</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+              <span>Private Practitioner Fellowship</span>
+            </li>
+          </ul>
+        </div>
+        <button onclick="openEnquiry('The Effective Architect — Mentorship Enrollment')" class="w-full py-3 px-4 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md transition-all text-center">
+          Join TEA Academy
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="bg-charcoal text-[#E5DDD0] pt-16 pb-12 border-t border-earth">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-earth/60">
+        
+        <div class="md:col-span-5">
+          <a href="#" class="inline-block mb-3 hover:opacity-85 transition-opacity" title="Crystal Kizor">
+            <svg viewBox="0 0 340 145" fill="#FBF9F5" class="h-10 sm:h-12 w-auto overflow-visible" role="img" aria-label="Crystal Kizor">
+              <text x="170" y="62" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" letter-spacing="0.05em">CRYSTAL</text>
+              <text x="170" y="130" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" letter-spacing="0.155em">KIZOR</text>
+            </svg>
+          </a>
+          <p class="text-sm text-[#B8AEA3] leading-relaxed max-w-sm mb-6 font-light">
+            Merging African context, materials, and sustainable design into human life. 
+            Studio COKA · ELEvated · TEA · AKO Alliance · Alive & Free.
+          </p>
+          <p class="text-xs text-[#8E8479]">Studio headquarters: Lagos, Nigeria · Project commissions worldwide.</p>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-4">Ecosystem</h4>
+          <ul class="text-sm space-y-2.5 text-[#B8AEA3]">
+            <li><a href="#ecosystem" class="hover:text-sand transition-colors">Studio COKA</a></li>
+            <li><a href="#ecosystem" class="hover:text-sand transition-colors">ELEvated Furniture</a></li>
+            <li><a href="#ecosystem" class="hover:text-sand transition-colors">The Effective Architect</a></li>
+            <li><a href="#ecosystem" class="hover:text-sand transition-colors">AKO Alliance</a></li>
+            <li><a href="#ecosystem" class="hover:text-sand transition-colors">Alive and Free Movement</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4">
+          <h4 class="text-xs uppercase tracking-widest text-terracotta font-semibold mb-4">Connect & Dialogue</h4>
+          <p class="text-sm text-[#B8AEA3] mb-4 font-light">For architectural commissions, keynote bookings, or studio press inquiries:</p>
+          <div class="flex flex-wrap items-center gap-3 mb-6">
+            <a href="https://linkedin.com" class="px-3 py-1.5 text-xs bg-earth hover:bg-terracotta text-sand rounded-md transition-colors">LinkedIn</a>
+            <a href="https://instagram.com" class="px-3 py-1.5 text-xs bg-earth hover:bg-terracotta text-sand rounded-md transition-colors">Instagram</a>
+            <a href="https://substack.com" class="px-3 py-1.5 text-xs bg-earth hover:bg-terracotta text-sand rounded-md transition-colors">Substack</a>
+          </div>
+          <button onclick="openEnquiry('General Inquiry')" class="text-xs font-semibold text-terracotta hover:underline">
+            Open Direct Inquiries Form →
+          </button>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#8E8479] gap-4">
+        <div>© 2026 Crystal Kizor. All rights reserved.</div>
+        <div><a href="#" class="hover:text-sand transition-colors">Back to Top ↑</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: ENQUIRY DIALOG -->
+  <div id="enquiryModal" class="hidden fixed inset-0 z-50 bg-charcoal/75 backdrop-blur-xs flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-sand text-charcoal max-w-xl w-full rounded-xl border border-[#E5DDD0] shadow-2xl p-6 sm:p-8">
+      <div class="flex items-center justify-between pb-4 border-b border-hairline mb-6">
+        <div>
+          <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal">Initiate Engagement</h3>
+          <p class="text-xs text-warmMuted mt-1">Connect with Crystal Kizor's studio and practice directors.</p>
+        </div>
+        <button onclick="closeEnquiry()" class="p-2 text-warmMuted hover:text-charcoal rounded-md text-xl">✕</button>
+      </div>
+
+      <form id="enquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-warmMuted uppercase tracking-wider mb-1.5">Pathway / Focus</label>
+          <input type="text" id="formPathway" readonly class="w-full px-3.5 py-2.5 text-sm bg-stone border border-[#DED6C9] rounded-md text-charcoal font-medium" />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-warmMuted uppercase tracking-wider mb-1.5">Your Name *</label>
+            <input required type="text" placeholder="e.g. Dr. Amina Bello" class="w-full px-3.5 py-2.5 text-sm bg-stone border border-[#DED6C9] rounded-md text-charcoal focus:outline-none focus:border-terracotta" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-warmMuted uppercase tracking-wider mb-1.5">Email *</label>
+            <input required type="email" placeholder="amina@example.com" class="w-full px-3.5 py-2.5 text-sm bg-stone border border-[#DED6C9] rounded-md text-charcoal focus:outline-none focus:border-terracotta" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-warmMuted uppercase tracking-wider mb-1.5">Project Scope or Message *</label>
+          <textarea required rows="4" placeholder="Describe your site, timeline, architectural program, or speaking topic..." class="w-full px-3.5 py-2.5 text-sm bg-stone border border-[#DED6C9] rounded-md text-charcoal focus:outline-none focus:border-terracotta resize-none"></textarea>
+        </div>
+
+        <div class="pt-2 flex items-center justify-end gap-3">
+          <button type="button" onclick="closeEnquiry()" class="px-4 py-2 text-xs font-medium text-warmMuted hover:text-charcoal">Cancel</button>
+          <button type="submit" class="px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md transition-all shadow-sm">Submit Inquiry</button>
+        </div>
+      </form>
+
+      <div id="enquirySuccessMsg" class="hidden py-8 text-center">
+        <h4 class="font-serif text-2xl font-semibold text-charcoal mb-2">Inquiry Transmitted</h4>
+        <p class="text-sm text-[#5C534D] max-w-md mx-auto leading-relaxed mb-6">Thank you. The studio director will review your parameters and follow up within 48 business hours.</p>
+        <button onclick="closeEnquiry()" class="px-6 py-2 text-xs font-semibold uppercase tracking-wider text-sand bg-earth hover:bg-terracotta rounded-md">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openEnquiry(type) {
+      document.getElementById('formPathway').value = type || 'General Inquiry';
+      document.getElementById('enquiryModal').classList.remove('hidden');
+      document.getElementById('enquiryForm').classList.remove('hidden');
+      document.getElementById('enquirySuccessMsg').classList.add('hidden');
+    }
+    function closeEnquiry() {
+      document.getElementById('enquiryModal').classList.add('hidden');
+    }
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('enquiryForm').classList.add('hidden');
+      document.getElementById('enquirySuccessMsg').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
