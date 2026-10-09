@@ -21,19 +21,24 @@ import {
   Upload
 } from 'lucide-react';
 
+// Production-ready bundled assets for seamless Vercel / static hosting deployment
+import crystalKizorPortrait from './assets/images/crystal-kizor-portrait.png';
+import studioCokaArchitecture from './assets/images/studio_coka_architecture_1791464106675.jpg';
+import elevatedFurniture from './assets/images/elevated_furniture_design_1791464119952.jpg';
+import teaArchitectWorkshop from './assets/images/tea_architect_workshop_1791464131332.jpg';
+import architecturalCraftTexture from './assets/images/architectural_craft_texture_1791464149261.jpg';
+import aliveAndFreeFellowship from './assets/images/alive_and_free_fellowship_1791470074779.jpg';
+
 // Image assets reflecting Crystal Kizor's authentic projects, furniture, craftsmanship, and portraits
 const IMAGES = {
-  heroPortrait: '/Architectural Designer in Her Studio.png',
-  aboutPortrait: '/Architectural Designer in Her Studio.png',
-  speakingPortrait: '/Architectural Designer in Her Studio.png',
-  rammedEarthVilla: '/2.jepg',
-  briseSoleilPavilion: '/src/assets/images/studio_coka_architecture_1791464106675.jpg',
-  tropicalAlmond: '/src/assets/images/tropical_almond_residence_1791468904090.jpg',
-  minimalistInterior: '/src/assets/images/curated_minimalist_interior_1791468914005.jpg',
-  furniture: '/src/assets/images/elevated_furniture_design_1791464119952.jpg',
-  workshop: '/src/assets/images/tea_architect_workshop_1791464131332.jpg',
-  communityPavilion: '/src/assets/images/community_craft_heritage_pavilion_1791468892935.jpg',
-  texture: '/src/assets/images/architectural_craft_texture_1791464149261.jpg',
+  heroPortrait: crystalKizorPortrait,
+  aboutPortrait: crystalKizorPortrait,
+  speakingPortrait: crystalKizorPortrait,
+  cokaArchitecture: studioCokaArchitecture,
+  furniture: elevatedFurniture,
+  workshop: teaArchitectWorkshop,
+  texture: architecturalCraftTexture,
+  fellowship: aliveAndFreeFellowship,
 };
 
 interface Initiative {
@@ -58,7 +63,7 @@ const ECOSYSTEM: Initiative[] = [
     category: 'Spatial Practice',
     description: 'A full-service architectural atelier and construction practice pioneering climate-conscious residential retreats, organic interiors, and civic sanctuaries rooted in contemporary African spatial syntax.',
     fullBio: 'Studio COKA unites vernacular West African construction logic with refined modern engineering. From rammed earth villas and cantilevers with natural shade canopies to fluted oak acoustic interiors, every space is sculpted for sensory tranquility and low-embodied-carbon performance.',
-    image: IMAGES.rammedEarthVilla,
+    image: IMAGES.cokaArchitecture,
     focus: ['Rammed Earth Architecture', 'Biophilic Residential Design', 'Bespoke Turnkey Delivery'],
     metrics: '14+ Completed & In-Progress Projects',
     ctaText: 'Commission Studio COKA',
@@ -97,7 +102,7 @@ const ECOSYSTEM: Initiative[] = [
     category: 'Social Impact',
     description: 'A philanthropic foundation demystifying spatial design, sustainable material literacy, and vocational craft for underserved youth and emerging African creators.',
     fullBio: 'AKO Alliance believes built environments belong to all communities. We organize hands-on design camps, provide vocational apprenticeships with seasoned builders, and sponsor university scholarships for female students entering architecture and structural engineering.',
-    image: IMAGES.communityPavilion,
+    image: IMAGES.texture,
     focus: ['Youth Apprenticeships', 'Spatial Literacy', 'Female Scholar Grants'],
     metrics: '1,200+ Youth Reached in West Africa',
     ctaText: 'Partner with AKO Alliance',
@@ -123,7 +128,7 @@ const ECOSYSTEM: Initiative[] = [
     category: 'Faith & Culture',
     description: 'A transformative spiritual and cultural movement empowering young men and women to anchor creative excellence, ethical leadership, and purpose in timeless biblical truth.',
     fullBio: 'Alive and Free gathers next-generation innovators, creators, and students to discover spiritual wholeness, integrity, and community support in an increasingly hurried world. We host retreats, devotional podcasts, and local fellowships.',
-    image: IMAGES.communityPavilion,
+    image: IMAGES.fellowship,
     focus: ['Spiritual Wholeness', 'Creative Excellence', 'Youth Mentorship'],
     metrics: 'Annual Gathering & Digital Community',
     ctaText: 'Connect with Alive & Free',
@@ -152,55 +157,44 @@ const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Epe, Lagos',
     year: '2025',
     materials: 'Stabilized Rammed Earth, Teak Timber, Biophilic Reflecting Pool',
-    image: IMAGES.rammedEarthVilla,
+    image: IMAGES.cokaArchitecture,
     caption: 'A biophilic private residence where layered rammed earth walls and open timber eaves dissolve boundaries between living quarters and the tropical garden reflecting pool.'
   },
   {
     id: 'project-2',
-    title: 'The Cantilevered Almond Villa',
-    initiative: 'Studio COKA',
-    category: 'architecture',
-    location: 'Ikoyi, Lagos',
-    year: '2024',
-    materials: 'Cantilevered Slabs, Reclaimed Clay Brick, Tropical Almond Tree Canopy',
-    image: IMAGES.tropicalAlmond,
-    caption: 'A modern tropical residence featuring floating horizontal planes, deep overhangs, and a preserved mature almond tree providing passive microclimatic cooling.'
-  },
-  {
-    id: 'project-3',
     title: 'The Bioclimatic Brise-Soleil Pavilion',
     initiative: 'Studio COKA',
     category: 'architecture',
     location: 'Abuja, Nigeria',
     year: '2024',
     materials: 'Rammed Earth, Teak Timber Brise-Soleil, Courtyard Water Basin',
-    image: IMAGES.briseSoleilPavilion,
+    image: IMAGES.cokaArchitecture,
     caption: 'A sustainable architectural pavilion balancing deep timber solar louvers, monolithic rammed earth masses, and cross-ventilating tropical gardens.'
   },
   {
-    id: 'project-4',
+    id: 'project-3',
     title: 'Curated Fluted Oak Salon & Lounge',
     initiative: 'Studio COKA',
     category: 'interiors',
     location: 'Victoria Island, Lagos',
     year: '2025',
     materials: 'Fluted White Oak, Bouclé Linen, Travertine, Brushed Brass',
-    image: IMAGES.minimalistInterior,
+    image: IMAGES.furniture,
     caption: 'An organic architectural living environment by Studio COKA structured around a curving fluted timber acoustic divider, bespoke curved sofas, and filtered daylight.'
   },
   {
-    id: 'project-5',
+    id: 'project-4',
     title: 'Community Craft & Heritage Pavilion',
     initiative: 'AKO Alliance',
     category: 'civic',
     location: 'Ogun State, Nigeria',
     year: '2025',
     materials: 'Rammed Earth, Woven Thatch & Timber Trusses, Perforated Clay Jali',
-    image: IMAGES.communityPavilion,
+    image: IMAGES.fellowship,
     caption: 'Commissioned under AKO Alliance, a self-ventilating civic pavilion uniting indigenous rammed earth construction with community weaving craft.'
   },
   {
-    id: 'project-6',
+    id: 'project-5',
     title: 'Koba Lounge Chair (Edition 03)',
     initiative: 'ELEvated',
     category: 'furniture',
@@ -211,7 +205,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     caption: 'Sculptural low-slung seating exploring the intersection of raw hand-planed timber grains and molten bronze joints.'
   },
   {
-    id: 'project-7',
+    id: 'project-6',
     title: 'Perforated Terracotta Screen & Solarium',
     initiative: 'Studio COKA',
     category: 'materials',
@@ -222,7 +216,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     caption: 'Tactile solar shading screen engineered to temper tropical heat while painting kinetic shadow geometries across polished floors.'
   },
   {
-    id: 'project-8',
+    id: 'project-7',
     title: 'The Atelier Drafting Suite & Material Archive',
     initiative: 'The Effective Architect',
     category: 'materials',
@@ -231,6 +225,17 @@ const GALLERY_ITEMS: GalleryItem[] = [
     materials: 'Laterite Specimen Blocks, Terrazzo, Brass Rule, Technical Vellum',
     image: IMAGES.workshop,
     caption: 'Curated studio research bench examining raw earthen material samples alongside precise technical construction drawings and TEA practice systems.'
+  },
+  {
+    id: 'project-8',
+    title: 'Vernacular Youth Build & Spatial Laboratory',
+    initiative: 'AKO Alliance',
+    category: 'civic',
+    location: 'Ibadan, Nigeria',
+    year: '2024',
+    materials: 'Compressed Earth Bricks, Sustainable Timber Trusses',
+    image: IMAGES.texture,
+    caption: 'Collaborative youth training workshop demonstrating low-embodied-carbon compressed earth brick engineering.'
   }
 ];
 
@@ -239,9 +244,11 @@ export default function App() {
   const [portraitSrc, setPortraitSrc] = useState<string>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('ck_custom_portrait');
-      if (saved) return saved;
+      if (saved && (saved.startsWith('data:image/') || saved.startsWith('http'))) {
+        return saved;
+      }
     }
-    return '/crystal-kizor-portrait.png';
+    return crystalKizorPortrait;
   });
 
   const handlePortraitFile = (file: File) => {
@@ -470,7 +477,7 @@ export default function App() {
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover object-top hover:scale-102 transition-transform duration-700 ease-out"
                         onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).src = '/crystal-kizor-portrait.png';
+                          (e.currentTarget as HTMLImageElement).src = crystalKizorPortrait;
                         }}
                       />
                       
@@ -613,9 +620,8 @@ export default function App() {
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"
                       onError={(e) => {
-                        if (initiative.id === 'speaking') {
-                          (e.currentTarget as HTMLImageElement).src = '/crystal-kizor-portrait.png';
-                        }
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.src = initiative.id === 'speaking' ? crystalKizorPortrait : studioCokaArchitecture;
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#2C2A29]/60 via-transparent to-transparent" />
@@ -728,6 +734,9 @@ export default function App() {
                       alt={item.title}
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLImageElement).src = studioCokaArchitecture;
+                      }}
                     />
                     
                     {/* Lightbox hint icon */}
@@ -933,7 +942,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = '/crystal-kizor-portrait.png';
+                      (e.currentTarget as HTMLImageElement).src = crystalKizorPortrait;
                     }}
                   />
                 </div>
@@ -1094,9 +1103,8 @@ export default function App() {
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
                 onError={(e) => {
-                  if (selectedInitiative.id === 'speaking') {
-                    (e.currentTarget as HTMLImageElement).src = '/crystal-kizor-portrait.png';
-                  }
+                  const target = e.currentTarget as HTMLImageElement;
+                  target.src = selectedInitiative.id === 'speaking' ? crystalKizorPortrait : studioCokaArchitecture;
                 }}
               />
               <button
@@ -1188,6 +1196,9 @@ export default function App() {
                 alt={lightboxItem.title}
                 referrerPolicy="no-referrer"
                 className="max-h-[60vh] w-auto object-contain"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = studioCokaArchitecture;
+                }}
               />
             </div>
 

@@ -2,76 +2,40 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 
 function portraitUploadPlugin() {
   return {
     name: 'portrait-upload-plugin',
-
     configureServer(server: any) {
       server.middlewares.use('/api/upload-portrait', (req: any, res: any) => {
-        if (req.method !== 'POST') {
+        if (req.method === 'POST') {
+          const chunks: Buffer[] = [];
+          req.on('data', (chunk: Buffer) => chunks.push(chunk));
+          req.on('end', () => {
+            try {
+              const buffer = Buffer.concat(chunks);
+              const publicDir = path.resolve('public');
+              const assetsDir = path.resolve('src/assets/images');
+              
+              if (!fs.existsSync(publicDir)) fs.mkdirSync(publicDir, { recursive: true });
+              if (!fs.existsSync(assetsDir)) fs.mkdirSync(assetsDir, { recursive: true });
+
+              fs.writeFileSync(path.join(publicDir, 'Poised in a Warm Design Studio.png'), buffer);
+              fs.writeFileSync(path.join(publicDir, 'crystal-kizor-portrait.png'), buffer);
+              fs.writeFileSync(path.join(assetsDir, 'crystal-kizor-portrait.png'), buffer);
+
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify({ success: true, url: '/Poised in a Warm Design Studio.png' }));
+            } catch (err: any) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: err.message }));
+            }
+          });
+        } else {
           res.statusCode = 405;
           res.end('Method Not Allowed');
-          return;
         }
-
-        const chunks: Buffer[] = [];
-
-        req.on('data', (chunk: Buffer) => {
-          chunks.push(chunk);
-        });
-
-        req.on('end', () => {
-          try {
-            const buffer = Buffer.concat(chunks);
-
-            const publicDir = path.resolve(__dirname, 'public');
-            const assetsDir = path.resolve(
-              __dirname,
-              'src/assets/images'
-            );
-
-            // Make sure both directories exist
-            fs.mkdirSync(publicDir, { recursive: true });
-            fs.mkdirSync(assetsDir, { recursive: true });
-
-            // Save the uploaded image in BOTH locations
-            const fileName = 'crystal-kizor-portrait.png';
-
-            const publicPath = path.join(publicDir, fileName);
-            const assetsPath = path.join(assetsDir, fileName);
-
-            fs.writeFileSync(publicPath, buffer);
-            fs.writeFileSync(assetsPath, buffer);
-
-            // Keep the existing studio image name available too
-            fs.writeFileSync(
-              path.join(publicDir, 'Poised in a Warm Design Studio.png'),
-              buffer
-            );
-
-            res.setHeader('Content-Type', 'application/json');
-
-            res.end(
-              JSON.stringify({
-                success: true,
-                url: `/${fileName}`,
-                publicUrl: `/${fileName}`,
-                assetPath: `/src/assets/images/${fileName}`,
-              })
-            );
-          } catch (err: any) {
-            res.statusCode = 500;
-
-            res.end(
-              JSON.stringify({
-                success: false,
-                error: err.message,
-              })
-            );
-          }
-        });
       });
     },
   };
@@ -79,25 +43,19 @@ function portraitUploadPlugin() {
 
 export default defineConfig(() => {
   return {
-    plugins: [
-      react(),
-      tailwindcss(),
-      portraitUploadPlugin(),
-    ],
-
+    plugins: [react(), tailwindcss(), portraitUploadPlugin()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve('.'),
       },
     },
-
     server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-
-      watch:
-        process.env.DISABLE_HMR === 'true'
-          ? null
-          : {},
+      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
+      watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
 });
+
