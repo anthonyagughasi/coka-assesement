@@ -26,7 +26,7 @@ const IMAGES = {
   heroPortrait: '/Architectural Designer in Her Studio.png',
   aboutPortrait: '/Architectural Designer in Her Studio.png',
   speakingPortrait: '/Architectural Designer in Her Studio.png',
-  rammedEarthVilla: '/2.jpg',
+  rammedEarthVilla: '/2.jepg',
   briseSoleilPavilion: '/src/assets/images/studio_coka_architecture_1791464106675.jpg',
   tropicalAlmond: '/src/assets/images/tropical_almond_residence_1791468904090.jpg',
   minimalistInterior: '/src/assets/images/curated_minimalist_interior_1791468914005.jpg',
